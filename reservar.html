@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Sala de Reunión</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Reservar Sala de Reunión</h1>
+    </header>
+    <main>
+        <form action="reservar.php" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+            
+            <label for="hora_inicio">Hora de Inicio</label>
+            <input type="time" id="hora_inicio" name="hora_inicio" required>
+            <select id="hora_inicio_ampm" name="hora_inicio_ampm" required>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            
+            <label for="hora_fin">Hora de Fin</label>
+            <input type="time" id="hora_fin" name="hora_fin" required>
+            <select id="hora_fin_ampm" name="hora_fin_ampm" required>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            
+            <label for="salon">Salón</label>
+            <select id="salon" name="salon" required>
+                <option value="Salón 1">Salón 1</option>
+                <option value="Salón 2">Salón 2</option>
+                <option value="Salón 3">Salón 3</option>
+                <option value="Salón 4">Salón 4</option>
+                <option value="Salón 5">Salón 5</option>
+            </select>
+            
+            <button type="submit">Reservar</button>
+        </form>
+        
+        <h2>Detalles de los Salones</h2>
+        <div class="salones">
+            <div class="salon">
+                <img src="salon1.jpg" alt="Salón 1">
+                <p>Salón 1 - $100/hora</p>
+            </div>
+            <div class="salon">
+                <img src="salon2.jpg" alt="Salón 2">
+                <p>Salón 2 - $150/hora</p>
+            </div>
+            <div class="salon">
+                <img src="salon3.jpg" alt="Salón 3">
+                <p>Salón 3 - $200/hora</p>
+            </div>
+            <div class="salon">
+                <img src="salon4.jpg" alt="Salón 4">
+                <p>Salón 4 - $250/hora</p>
+            </div>
+            <div class="salon">
+                <img src="salon5.jpg" alt="Salón 5">
+                <p>Salón 5 - $300/hora</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
